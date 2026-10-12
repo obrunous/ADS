@@ -21,7 +21,7 @@ int main(){
 }
 
 /*
-ENUNCIADO (descrição baseada no código atual)
+ENUNCIADO
 
 Elabore um programa que leia três números inteiros e mostre o maior deles.
 

@@ -37,7 +37,7 @@ int main(){
 }
 
 /*
-ENUNCIADO (descrição baseada no código atual)
+ENUNCIADO
 
 Elabore um programa que leia as quantidades de morangos e maçãs compradas, em quilos,
 e calcule o valor total da compra.

@@ -22,7 +22,7 @@ int main(){
 }
 
 /*
-ENUNCIADO (descrição baseada no código atual)
+ENUNCIADO
 
 Elabore um programa que leia a distância percorrida em quilômetros e o tipo de bandeira
 de uma corrida de táxi. Para a bandeira 1, considere R$ 1,80 por quilômetro;

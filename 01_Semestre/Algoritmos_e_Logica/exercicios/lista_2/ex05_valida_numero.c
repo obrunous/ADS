@@ -17,7 +17,7 @@ int main(){
 }
 
 /*
-ENUNCIADO (descrição baseada no código atual)
+ENUNCIADO
 
 Elabore um programa que leia um número inteiro e informe se ele é válido.
 Considere válido um número entre 50 e 70, inclusive, ou maior que 100.

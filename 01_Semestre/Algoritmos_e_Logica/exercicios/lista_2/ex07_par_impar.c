@@ -33,7 +33,7 @@ int main(){
 */
 
 /*
-ENUNCIADO (descrição baseada no código atual)
+ENUNCIADO
 
 Elabore um programa que leia um número inteiro e informe se ele é par ou ímpar.
 Se for par, informe também se ele é maior que 15.

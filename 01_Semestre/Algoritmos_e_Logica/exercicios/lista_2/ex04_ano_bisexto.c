@@ -42,7 +42,7 @@ int main() {
 }
 
 /*
-ENUNCIADO (descrição baseada no código atual)
+ENUNCIADO
 
 Elabore um programa que leia o dia, o mês e o ano de um aniversário e verifique se a data é válida.
 O ano deve ser maior que 1900 e menor que 2023, e o mês deve estar entre 1 e 12.
