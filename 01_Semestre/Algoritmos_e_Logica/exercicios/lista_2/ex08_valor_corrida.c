@@ -1,16 +1,3 @@
-/*
-
-[x] 1. Criar as variáveis para distância, bandeira e valor da corrida.
-[x] 2. Pedir a distância percorrida em quilômetros.
-[x] 3. Ler e guardar a distância.
-[x] 4. Pedir o tipo da bandeira: 1 ou 2.
-[x] 5. Ler e guardar a bandeira.
-[x] 6. Se a bandeira for 1, calcular: distância vezes 1,80.
-[x] 7. Se a bandeira for 2, calcular: distância vezes 2,30.
-[x] 8. Mostrar o valor da corrida.
-
-*/
-
 #include <stdio.h>
 
 int main(){
@@ -33,3 +20,17 @@ int main(){
 
     return 0;
 }
+
+/*
+PROCEDIMENTO
+
+[x] 1. Criar as variáveis para distância, bandeira e valor da corrida.
+[x] 2. Pedir a distância percorrida em quilômetros.
+[x] 3. Ler e guardar a distância.
+[x] 4. Pedir o tipo da bandeira: 1 ou 2.
+[x] 5. Ler e guardar a bandeira.
+[x] 6. Se a bandeira for 1, calcular: distância vezes 1,80.
+[x] 7. Se a bandeira for 2, calcular: distância vezes 2,30.
+[x] 8. Mostrar o valor da corrida para a bandeira escolhida.
+
+*/

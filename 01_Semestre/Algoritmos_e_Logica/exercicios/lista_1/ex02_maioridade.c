@@ -18,3 +18,14 @@ int main(){
 
     return 0;
 }
+
+/*
+PROCEDIMENTO
+
+[x] 1. Criar a variável para guardar a idade.
+[x] 2. Pedir a idade.
+[x] 3. Ler e guardar a idade.
+[x] 4. Se a idade for maior ou igual a 18, mostrar MAIOR DE IDADE.
+[x] 5. Caso contrário, mostrar MENOR DE IDADE.
+
+*/

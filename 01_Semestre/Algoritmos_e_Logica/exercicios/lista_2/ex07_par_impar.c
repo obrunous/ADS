@@ -31,3 +31,16 @@ int main(){
     O operador % calcula o resto da divisão.
     Se o resto da divisão por 2 for zero, o número é par.
 */
+
+/*
+PROCEDIMENTO
+
+[x] 1. Criar a variável para guardar o número inteiro.
+[x] 2. Pedir um número inteiro.
+[x] 3. Ler e guardar o número.
+[x] 4. Se o resto da divisão por 2 for zero, mostrar que o número é par.
+[x] 5. Para um número par, verificar e mostrar se ele é maior que 15.
+[x] 6. Caso o resto da divisão por 2 não seja zero, mostrar que o número é ímpar.
+[x] 7. Para um número ímpar, verificar e mostrar se ele é menor que 50.
+
+*/

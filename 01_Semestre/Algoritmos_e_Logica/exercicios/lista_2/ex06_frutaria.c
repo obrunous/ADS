@@ -35,3 +35,17 @@ int main(){
 
     return 0;
 }
+
+/*
+PROCEDIMENTO
+
+[x] 1. Criar as variáveis para as quantidades de frutas, os preços por quilo e o valor total.
+[x] 2. Pedir, ler e guardar a quantidade de morangos em quilos.
+[x] 3. Pedir, ler e guardar a quantidade de maçãs em quilos.
+[x] 4. Se a quantidade de morangos for até 5 kg, usar o preço de 7,50 por quilo; caso contrário, usar 5,30.
+[x] 5. Se a quantidade de maçãs for até 5 kg, usar o preço de 3,50 por quilo; caso contrário, usar 2,80.
+[x] 6. Calcular o valor total somando quantidade vezes preço de cada fruta.
+[x] 7. Se a quantidade total for menor que 5 kg e o valor total for maior que 19,00, aplicar 8% de desconto.
+[x] 8. Mostrar o valor total com duas casas decimais.
+
+*/

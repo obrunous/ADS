@@ -42,3 +42,15 @@ int main(){
     - Compara b e c; se b for maior, troca os valores.
     - Ao final, os três números ficam em ordem crescente.
 */
+
+/*
+PROCEDIMENTO
+
+[x] 1. Criar as variáveis para os três números e uma variável temporária.
+[x] 2. Pedir, ler e guardar cada um dos três números.
+[x] 3. Se o primeiro número for maior que o segundo, trocar os dois usando a variável temporária.
+[x] 4. Se o primeiro número for maior que o terceiro, trocar os dois usando a variável temporária.
+[x] 5. Se o segundo número for maior que o terceiro, trocar os dois usando a variável temporária.
+[x] 6. Mostrar os três números em ordem crescente.
+
+*/

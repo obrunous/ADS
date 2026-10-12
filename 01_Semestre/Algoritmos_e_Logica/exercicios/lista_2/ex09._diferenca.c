@@ -1,18 +1,8 @@
 /*
-
 Elabore um programa que
 leia dois números inteiros
 e apresente o resultado da diferença do
 maior número pelo menor deles.
-
-[x] 1. Criar as variáveis para os dois números inteiros e a diferença.
-[x] 2. Pedir o primeiro número.
-[x] 3. Ler e guardar o primeiro número.
-[x] 4. Pedir o segundo número.
-[x] 5. Ler e guardar o segundo número.
-[] 6. Se o primeiro número for maior que o segundo, calcular: primeiro menos segundo.
-[] 7. Caso contrário, calcular: segundo menos primeiro.
-[] 8. Mostrar o resultado da diferença.
 */
 
 #include <stdio.h>
@@ -38,3 +28,17 @@ int main(){
 
     return 0;
 }
+
+/*
+PROCEDIMENTO
+
+[x] 1. Criar as variáveis para os dois números inteiros e a diferença.
+[x] 2. Pedir o primeiro número.
+[x] 3. Ler e guardar o primeiro número.
+[x] 4. Pedir o segundo número.
+[x] 5. Ler e guardar o segundo número.
+[x] 6. Se o primeiro número for maior que o segundo, calcular: primeiro menos segundo.
+[x] 7. Caso contrário, calcular: segundo menos primeiro.
+[x] 8. Mostrar o resultado da diferença.
+
+*/

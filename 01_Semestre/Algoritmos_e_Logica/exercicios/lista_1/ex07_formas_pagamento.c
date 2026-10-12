@@ -45,3 +45,17 @@ Mostre o valor a ser pago.*/
 // Aplica 10% de desconto no pagamento à vista.
 // Aplica 2% de acréscimo no cartão de crédito.
 // Aplica 10% de acréscimo no pagamento parcelado.
+
+/*
+PROCEDIMENTO
+
+[x] 1. Criar as variáveis para o valor da compra e a opção de pagamento.
+[x] 2. Pedir, ler e guardar o valor da compra.
+[x] 3. Mostrar as opções de pagamento.
+[x] 4. Ler e guardar a opção escolhida.
+[x] 5. Se a opção for 1, aplicar 10% de desconto e mostrar o valor final.
+[x] 6. Se a opção for 2, aplicar 2% de acréscimo e mostrar o valor final.
+[x] 7. Se a opção for 3, aplicar 10% de acréscimo e mostrar o valor final.
+[x] 8. Caso contrário, mostrar INVÁLIDO.
+
+*/

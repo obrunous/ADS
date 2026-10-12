@@ -19,3 +19,15 @@ int main(){
 
     return 0;
 }
+
+/*
+PROCEDIMENTO
+
+[x] 1. Criar uma variável para guardar a letra.
+[x] 2. Pedir uma letra: M ou F.
+[x] 3. Ler e guardar a letra.
+[x] 4. Se a letra for M, mostrar Masculino.
+[x] 5. Se a letra for F, mostrar Feminino.
+[x] 6. Caso contrário, mostrar Inválido.
+
+*/

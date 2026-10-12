@@ -28,3 +28,16 @@ int main(){
 
     return 0;
 }
+
+/*
+PROCEDIMENTO
+
+[x] 1. Criar as variáveis para peso, altura e IMC.
+[x] 2. Pedir, ler e guardar o peso.
+[x] 3. Pedir, ler e guardar a altura.
+[x] 4. Calcular o IMC: peso dividido pela altura vezes a altura.
+[x] 5. Se o IMC for maior que 30, mostrar OBESO.
+[x] 6. Caso contrário, mostrar NORMAL.
+[x] 7. Mostrar o IMC com duas casas decimais.
+
+*/

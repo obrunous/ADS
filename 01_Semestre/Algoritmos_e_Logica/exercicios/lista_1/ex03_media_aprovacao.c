@@ -31,3 +31,15 @@ int main(){
 
     return 0;
 }
+
+/*
+PROCEDIMENTO
+
+[x] 1. Criar as variáveis para os quatro números e a média.
+[x] 2. Pedir, ler e guardar cada um dos quatro números.
+[x] 3. Somar os quatro números e dividir o resultado por 4.
+[x] 4. Se a média for maior ou igual a 6, mostrar APROVADO.
+[x] 5. Caso contrário, mostrar REPROVADO.
+[x] 6. Mostrar a média com duas casas decimais.
+
+*/

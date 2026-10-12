@@ -40,3 +40,20 @@ int main() {
 
     return 0;
 }
+
+/*
+PROCEDIMENTO
+
+[x] 1. Criar as variáveis para dia, mês, ano e limite de dias.
+[x] 2. Pedir, ler e guardar o dia, o mês e o ano do aniversário.
+[x] 3. Se o ano for menor ou igual a 1900 ou maior ou igual a 2023, mostrar a mensagem de ano inválido.
+[x] 4. Se o mês estiver fora do intervalo de 1 a 12, mostrar a mensagem de mês inválido.
+[x] 5. Se o dia for menor que 1, mostrar a mensagem de dia inválido.
+[x] 6. Para fevereiro, verificar se o ano é divisível por 400 ou se é divisível por 4 e não por 100.
+[x] 7. Se o ano for bissexto, definir 29 dias para fevereiro; caso contrário, definir 28.
+[x] 8. Para abril, junho, setembro e novembro, definir 30 dias.
+[x] 9. Para os demais meses, definir 31 dias.
+[x] 10. Se o dia ultrapassar o limite do mês, mostrar a mensagem de data inválida.
+[x] 11. Caso contrário, mostrar Data válida.
+
+*/

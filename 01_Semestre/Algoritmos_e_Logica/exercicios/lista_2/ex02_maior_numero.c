@@ -19,3 +19,14 @@ int main(){
     }
     return 0;
 }
+
+/*
+PROCEDIMENTO
+
+[x] 1. Criar as variáveis para os três números inteiros.
+[x] 2. Pedir, ler e guardar cada um dos três números.
+[x] 3. Se o primeiro for maior ou igual aos outros dois, mostrar o primeiro como maior.
+[x] 4. Se o segundo for maior ou igual aos outros dois, mostrar o segundo como maior.
+[x] 5. Caso contrário, mostrar o terceiro como maior.
+
+*/
