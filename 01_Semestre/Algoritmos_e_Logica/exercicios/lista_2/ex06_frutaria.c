@@ -47,7 +47,7 @@ Conforme a regra implementada neste código, aplique 8% de desconto quando a qua
 total for menor que 5 kg e o valor total for maior que R$ 19,00.
 Mostre o valor final da compra.
 
-PROCEDIMENTO
+MEU RACIOCÍNIO
 
 [x] 1. Criar as variáveis para as quantidades de frutas, os preços por quilo e o valor total.
 [x] 2. Pedir, ler e guardar a quantidade de morangos em quilos.

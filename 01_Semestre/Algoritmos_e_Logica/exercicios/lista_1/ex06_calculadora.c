@@ -48,7 +48,7 @@ Mostre o resultado
 Desafio. Se for divisão e o segundo numero for 0.
 Colocar segundo número não pode ser 0
 
-PROCEDIMENTO
+MEU RACIOCÍNIO
 
 [x] 1. Criar as variáveis para os dois números, o sinal e os resultados.
 [x] 2. Pedir, ler e guardar o primeiro número.

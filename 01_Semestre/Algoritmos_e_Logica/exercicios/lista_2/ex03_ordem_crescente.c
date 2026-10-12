@@ -48,7 +48,7 @@ ENUNCIADO
 
 Elabore um programa que leia três números inteiros e apresente os valores em ordem crescente.
 
-PROCEDIMENTO
+MEU RACIOCÍNIO
 
 [x] 1. Criar as variáveis para os três números e uma variável temporária.
 [x] 2. Pedir, ler e guardar cada um dos três números.

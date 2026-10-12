@@ -35,7 +35,7 @@ ENUNCIADO
 3) Receba 4 números e calcule a média. Se a média for maior
 que 6 informe “Aluno Aprovado” se for menor informe “Aluno Reprovado”
 
-PROCEDIMENTO
+MEU RACIOCÍNIO
 
 [x] 1. Criar as variáveis para os quatro números e a média.
 [x] 2. Pedir, ler e guardar cada um dos quatro números.

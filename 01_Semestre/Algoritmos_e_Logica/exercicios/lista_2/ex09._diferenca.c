@@ -30,7 +30,7 @@ leia dois números inteiros
 e apresente o resultado da diferença do
 maior número pelo menor deles.
 
-PROCEDIMENTO
+MEU RACIOCÍNIO
 
 [x] 1. Criar as variáveis para os dois números inteiros e a diferença.
 [x] 2. Pedir o primeiro número.

@@ -32,7 +32,7 @@ Se o IMC for maior que 30 mostre a mensagem
 “Obeso”, caso contrário mostre a mensagem “Normal”
 Imc = peso / (altura ^2)
 
-PROCEDIMENTO
+MEU RACIOCÍNIO
 
 [x] 1. Criar as variáveis para peso, altura e IMC.
 [x] 2. Pedir, ler e guardar o peso.

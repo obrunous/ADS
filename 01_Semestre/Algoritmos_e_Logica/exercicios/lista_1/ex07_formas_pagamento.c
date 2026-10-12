@@ -51,7 +51,7 @@ ENUNCIADO
 3-No cartão parcelado em 3x tem 10% de acrescimo
 Mostre o valor a ser pago.
 
-PROCEDIMENTO
+MEU RACIOCÍNIO
 
 [x] 1. Criar as variáveis para o valor da compra e a opção de pagamento.
 [x] 2. Pedir, ler e guardar o valor da compra.

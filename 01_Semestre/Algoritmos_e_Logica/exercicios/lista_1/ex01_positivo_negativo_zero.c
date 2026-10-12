@@ -21,7 +21,7 @@ ENUNCIADO
 
 1) Receba um número e mostre se ele é Positivo, Negativo ou 0
 
-PROCEDIMENTO
+MEU RACIOCÍNIO
 
 [x] 1. Criar a variável para guardar o número.
 [x] 2. Pedir um número.

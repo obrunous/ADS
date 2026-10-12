@@ -48,7 +48,7 @@ Elabore um programa que leia o dia, o mês e o ano de um aniversário e verifiqu
 O ano deve ser maior que 1900 e menor que 2023, e o mês deve estar entre 1 e 12.
 Verifique a quantidade de dias de cada mês, considerando os anos bissextos para fevereiro.
 
-PROCEDIMENTO
+MEU RACIOCÍNIO
 
 [x] 1. Criar as variáveis para dia, mês, ano e limite de dias.
 [x] 2. Pedir, ler e guardar o dia, o mês e o ano do aniversário.

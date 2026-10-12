@@ -52,7 +52,7 @@ digite um número fora desse
 intervalo, o programa deverá exibir
 uma mensagem de número inválido.
 
-PROCEDIMENTO
+MEU RACIOCÍNIO
 
 [x] 1. Criar uma variável inteira para guardar o número do mês.
 [x] 2. Pedir um número de mês.
