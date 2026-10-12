@@ -22,6 +22,12 @@ int main(){
 }
 
 /*
+ENUNCIADO (descrição baseada no código atual)
+
+Elabore um programa que leia a distância percorrida em quilômetros e o tipo de bandeira
+de uma corrida de táxi. Para a bandeira 1, considere R$ 1,80 por quilômetro;
+para a bandeira 2, considere R$ 2,30 por quilômetro. Calcule e mostre o valor da corrida.
+
 PROCEDIMENTO
 
 [x] 1. Criar as variáveis para distância, bandeira e valor da corrida.

@@ -21,6 +21,10 @@ int main(){
 }
 
 /*
+ENUNCIADO (descrição baseada no código atual)
+
+Elabore um programa que leia três números inteiros e mostre o maior deles.
+
 PROCEDIMENTO
 
 [x] 1. Criar as variáveis para os três números inteiros.

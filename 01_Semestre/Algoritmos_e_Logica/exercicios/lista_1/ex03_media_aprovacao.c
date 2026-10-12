@@ -1,11 +1,8 @@
-/* 3) Receba 4 números e calcule a média. Se a média for maior
-que 6 informe “Aluno Aprovado” se for menor informe “Aluno Reprovado” */
-
 #include <stdio.h>
 
 int main(){
     float n1, n2, n3, n4;
-    float media; 
+    float media;
 
     printf("Informe o primeiro numero: ");
     scanf("%f", &n1);
@@ -33,6 +30,11 @@ int main(){
 }
 
 /*
+ENUNCIADO
+
+3) Receba 4 números e calcule a média. Se a média for maior
+que 6 informe “Aluno Aprovado” se for menor informe “Aluno Reprovado”
+
 PROCEDIMENTO
 
 [x] 1. Criar as variáveis para os quatro números e a média.

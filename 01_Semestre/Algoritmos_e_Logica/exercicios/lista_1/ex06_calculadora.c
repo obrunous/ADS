@@ -30,20 +30,24 @@ int main(){
         } else{
             dividir = num1 / num2;
             printf("RESULTADO: %.2f\n", dividir);
-        
+
     }
 
 }
     return 0;
 }
 
-/* 6) Desenvolva uma calculadora
-receba dois números e o sinal. 
-Mostre o resultado
-Desafio. Se for divisão e o segundo numero for 0. 
-Colocar segundo número não pode ser 0*/
+
 
 /*
+ENUNCIADO
+
+6) Desenvolva uma calculadora
+receba dois números e o sinal.
+Mostre o resultado
+Desafio. Se for divisão e o segundo numero for 0.
+Colocar segundo número não pode ser 0
+
 PROCEDIMENTO
 
 [x] 1. Criar as variáveis para os dois números, o sinal e os resultados.

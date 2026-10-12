@@ -1,10 +1,3 @@
-/*
-Elabore um programa que
-leia dois números inteiros
-e apresente o resultado da diferença do
-maior número pelo menor deles.
-*/
-
 #include <stdio.h>
 
 int main(){
@@ -30,6 +23,13 @@ int main(){
 }
 
 /*
+ENUNCIADO
+
+Elabore um programa que
+leia dois números inteiros
+e apresente o resultado da diferença do
+maior número pelo menor deles.
+
 PROCEDIMENTO
 
 [x] 1. Criar as variáveis para os dois números inteiros e a diferença.

@@ -37,6 +37,16 @@ int main(){
 }
 
 /*
+ENUNCIADO (descrição baseada no código atual)
+
+Elabore um programa que leia as quantidades de morangos e maçãs compradas, em quilos,
+e calcule o valor total da compra.
+Morangos: até 5 kg, R$ 7,50 por quilo; acima de 5 kg, R$ 5,30 por quilo.
+Maçãs: até 5 kg, R$ 3,50 por quilo; acima de 5 kg, R$ 2,80 por quilo.
+Conforme a regra implementada neste código, aplique 8% de desconto quando a quantidade
+total for menor que 5 kg e o valor total for maior que R$ 19,00.
+Mostre o valor final da compra.
+
 PROCEDIMENTO
 
 [x] 1. Criar as variáveis para as quantidades de frutas, os preços por quilo e o valor total.

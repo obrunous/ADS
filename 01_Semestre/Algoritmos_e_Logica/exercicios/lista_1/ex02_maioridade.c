@@ -1,8 +1,4 @@
-/* 2) Receba uma idade é mostre se é maior ou igual a 18 anos. Mostre a
-mensagem se for maior que 18 anos e mostre a mensagem se for menor que 18 anos
-*/
-
-#include <stdio.h> 
+#include <stdio.h>
 
 int main(){
     int idade;
@@ -20,6 +16,11 @@ int main(){
 }
 
 /*
+ENUNCIADO
+
+2) Receba uma idade é mostre se é maior ou igual a 18 anos. Mostre a
+mensagem se for maior que 18 anos e mostre a mensagem se for menor que 18 anos
+
 PROCEDIMENTO
 
 [x] 1. Criar a variável para guardar a idade.

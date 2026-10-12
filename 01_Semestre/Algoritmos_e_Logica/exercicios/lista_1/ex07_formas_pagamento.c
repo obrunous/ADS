@@ -36,17 +36,21 @@ int main(){
     return 0;
 }
 
-/* 7) Ao pagar uma compra o atendente pergunta.
-1- A vista tem 10% de desconto
-2- No cartão de crédito tem 2% de acrescimo
-3-No cartão parcelado em 3x tem 10% de acrescimo
-Mostre o valor a ser pago.*/
+
 
 // Aplica 10% de desconto no pagamento à vista.
 // Aplica 2% de acréscimo no cartão de crédito.
 // Aplica 10% de acréscimo no pagamento parcelado.
 
 /*
+ENUNCIADO
+
+7) Ao pagar uma compra o atendente pergunta.
+1- A vista tem 10% de desconto
+2- No cartão de crédito tem 2% de acrescimo
+3-No cartão parcelado em 3x tem 10% de acrescimo
+Mostre o valor a ser pago.
+
 PROCEDIMENTO
 
 [x] 1. Criar as variáveis para o valor da compra e a opção de pagamento.

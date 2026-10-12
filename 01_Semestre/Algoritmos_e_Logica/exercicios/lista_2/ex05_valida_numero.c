@@ -17,6 +17,11 @@ int main(){
 }
 
 /*
+ENUNCIADO (descrição baseada no código atual)
+
+Elabore um programa que leia um número inteiro e informe se ele é válido.
+Considere válido um número entre 50 e 70, inclusive, ou maior que 100.
+
 PROCEDIMENTO
 
 [x] 1. Criar a variável para guardar o número inteiro.

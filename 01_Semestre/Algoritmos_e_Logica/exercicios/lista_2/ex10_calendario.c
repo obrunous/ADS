@@ -38,7 +38,11 @@ int main(){
 }
 
 
+
+
 /*
+ENUNCIADO
+
 Elabore um programa que
 leia um número inteiro
 de 1 a 12 e apresente o
@@ -47,9 +51,7 @@ por extenso. Caso o usuário
 digite um número fora desse
 intervalo, o programa deverá exibir
 uma mensagem de número inválido.
-*/
 
-/*
 PROCEDIMENTO
 
 [x] 1. Criar uma variável inteira para guardar o número do mês.

@@ -1,7 +1,4 @@
-/* 5) Receba uma letra. Se for ‘M’ mostrar masculino. Se for ‘F’ mostrar Feminino. Caso Contrário
-coloque inválido */
-
-#include <stdio.h> 
+#include <stdio.h>
 
 int main(){
     char letra;
@@ -21,6 +18,11 @@ int main(){
 }
 
 /*
+ENUNCIADO
+
+5) Receba uma letra. Se for ‘M’ mostrar masculino. Se for ‘F’ mostrar Feminino. Caso Contrário
+coloque inválido
+
 PROCEDIMENTO
 
 [x] 1. Criar uma variável para guardar a letra.

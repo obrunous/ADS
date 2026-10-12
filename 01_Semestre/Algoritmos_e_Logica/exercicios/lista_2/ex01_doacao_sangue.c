@@ -16,6 +16,11 @@ int main(){
 }
 
 /*
+ENUNCIADO (descrição baseada no código atual)
+
+Elabore um programa que leia a idade de uma pessoa e informe se ela pode doar sangue.
+Considere, neste exercício, que a idade permitida vai de 18 a 67 anos, inclusive.
+
 PROCEDIMENTO
 
 [x] 1. Criar a variável para guardar a idade.

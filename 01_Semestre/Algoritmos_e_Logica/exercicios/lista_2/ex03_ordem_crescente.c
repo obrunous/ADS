@@ -44,6 +44,10 @@ int main(){
 */
 
 /*
+ENUNCIADO (descrição baseada no código atual)
+
+Elabore um programa que leia três números inteiros e apresente os valores em ordem crescente.
+
 PROCEDIMENTO
 
 [x] 1. Criar as variáveis para os três números e uma variável temporária.

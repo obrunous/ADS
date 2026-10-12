@@ -1,8 +1,3 @@
-/* 4) Informe o Peso e a Altura. Calcule o IMC. 
-Se o IMC for maior que 30 mostre a mensagem
-“Obeso”, caso contrário mostre a mensagem “Normal”
-Imc = peso / (altura ^2) */
-
 #include <stdio.h>
 
 int main(){
@@ -30,6 +25,13 @@ int main(){
 }
 
 /*
+ENUNCIADO
+
+4) Informe o Peso e a Altura. Calcule o IMC.
+Se o IMC for maior que 30 mostre a mensagem
+“Obeso”, caso contrário mostre a mensagem “Normal”
+Imc = peso / (altura ^2)
+
 PROCEDIMENTO
 
 [x] 1. Criar as variáveis para peso, altura e IMC.

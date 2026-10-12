@@ -33,6 +33,12 @@ int main(){
 */
 
 /*
+ENUNCIADO (descrição baseada no código atual)
+
+Elabore um programa que leia um número inteiro e informe se ele é par ou ímpar.
+Se for par, informe também se ele é maior que 15.
+Se for ímpar, informe também se ele é menor que 50.
+
 PROCEDIMENTO
 
 [x] 1. Criar a variável para guardar o número inteiro.

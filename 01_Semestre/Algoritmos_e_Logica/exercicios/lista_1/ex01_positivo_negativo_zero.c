@@ -1,5 +1,3 @@
-/*1) Receba um número e mostre se ele é Positivo, Negativo ou 0*/
-
 #include <stdio.h>
 
 int main(){
@@ -19,6 +17,10 @@ int main(){
 }
 
 /*
+ENUNCIADO
+
+1) Receba um número e mostre se ele é Positivo, Negativo ou 0
+
 PROCEDIMENTO
 
 [x] 1. Criar a variável para guardar o número.
