@@ -1,0 +1,29 @@
+CONEXÃO DO PROGRAMA C COM O BANCO SISTEMA_ACADEMICO
+
+ARQUIVOS
+main.c: programa que conecta ao MySQL e confirma o banco selecionado.
+sistema-academico.sql: cópia da exportação da estrutura e dos dados do banco.
+O banco em execução permanece no servidor MySQL; o SQL é sua exportação.
+
+1. ENTRAR NA PASTA
+cd /Users/brunoalves/Documents/ADS/02_Semestre/6_Banco_de_Dados_I/atividades/09-instalacao-e-configuracao-mysql-com-c/conexao
+
+2. CRIAR A PASTA DO EXECUTÁVEL
+mkdir -p output
+
+3. COMPILAR
+clang -std=c11 -Wall -Wextra -g main.c -I/usr/local/mysql/include -L/usr/local/mysql/lib -lmysqlclient -Wl,-rpath,/usr/local/mysql/lib -o output/conexao
+
+4. EXECUTAR
+./output/conexao
+
+Digite a senha do MySQL quando solicitada. Ela não aparece no terminal e não deve ser salva neste arquivo.
+
+RESULTADO CONFIRMADO PELO ALUNO EM 18/10/2026
+Senha do MySQL para root:
+Conexao realizada com sucesso!
+Banco conectado: sistema_academico
+
+A compilação terminou sem mensagens de erro ou aviso no terminal apresentado.
+O programa executou apenas a conexão e SELECT DATABASE(), sem alterar registros.
+Não é necessário executar o arquivo SQL para repetir o teste de conexão com o banco já existente.

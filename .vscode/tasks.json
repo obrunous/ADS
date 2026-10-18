@@ -1,0 +1,85 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Assembly: montar arquivo aberto",
+            "type": "process",
+            "command": "/usr/bin/clang",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/output/${fileBasenameNoExtension}"
+            ],
+            "dependsOn": "Assembly: criar pasta output",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Assembly: criar pasta output",
+            "type": "process",
+            "command": "/bin/mkdir",
+            "args": [
+                "-p",
+                "${fileDirname}/output"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Assembly: executar arquivo aberto",
+            "type": "process",
+            "command": "${fileDirname}/output/${fileBasenameNoExtension}",
+            "dependsOn": "Assembly: montar arquivo aberto",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "MySQL: criar output",
+            "type": "process",
+            "command": "/bin/mkdir",
+            "args": [
+                "-p",
+                "${workspaceFolder}/02_Semestre/6_Banco_de_Dados_I/atividades/09-instalacao-e-configuracao-mysql-com-c/conexao/output"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "MySQL: compilar conexao academica",
+            "type": "process",
+            "command": "/usr/bin/clang",
+            "args": [
+                "-std=c11",
+                "-Wall",
+                "-Wextra",
+                "-g",
+                "${workspaceFolder}/02_Semestre/6_Banco_de_Dados_I/atividades/09-instalacao-e-configuracao-mysql-com-c/conexao/main.c",
+                "-I/usr/local/mysql/include",
+                "-L/usr/local/mysql/lib",
+                "-lmysqlclient",
+                "-Wl,-rpath,/usr/local/mysql/lib",
+                "-o",
+                "${workspaceFolder}/02_Semestre/6_Banco_de_Dados_I/atividades/09-instalacao-e-configuracao-mysql-com-c/conexao/output/conexao"
+            ],
+            "dependsOn": "MySQL: criar output",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "MySQL: conectar sistema_academico",
+            "type": "process",
+            "command": "${workspaceFolder}/02_Semestre/6_Banco_de_Dados_I/atividades/09-instalacao-e-configuracao-mysql-com-c/conexao/output/conexao",
+            "dependsOn": "MySQL: compilar conexao academica",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated"
+            }
+        }
+    ]
+}

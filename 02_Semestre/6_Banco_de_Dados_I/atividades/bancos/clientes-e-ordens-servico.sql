@@ -1,0 +1,79 @@
+-- MySQL dump 10.13  Distrib 8.0.36, for macos14 (x86_64)
+--
+-- Host: 127.0.0.1    Database: atividade_02
+-- ------------------------------------------------------
+-- Server version	8.0.36
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `Clientes`
+--
+
+DROP TABLE IF EXISTS `Clientes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `Clientes` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) NOT NULL,
+  `endereco` varchar(200) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Clientes`
+--
+
+LOCK TABLES `Clientes` WRITE;
+/*!40000 ALTER TABLE `Clientes` DISABLE KEYS */;
+INSERT INTO `Clientes` VALUES (1,'Ana Exemplo','Rua das Flores, 10'),(2,'Fabio Exemplo','Rua das Palmeiras, 20'),(3,'Carla Exemplo','Rua das Acacias, 30'),(4,'Diego Exemplo','Rua dos Pinheiros, 40'),(5,'Elisa Exemplo','Rua das Violetas, 50'),(6,'Felipe Exemplo','Rua dos Lirios, 60'),(7,'Gabriela Exemplo','Rua das Rosas, 70'),(8,'Hugo Exemplo','Rua dos Ipes, 80'),(9,'Isabela Exemplo','Rua das Orquideas, 90'),(10,'Joao Exemplo','Rua das Margaridas, 100');
+/*!40000 ALTER TABLE `Clientes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `Ordem_Servico`
+--
+
+DROP TABLE IF EXISTS `Ordem_Servico`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `Ordem_Servico` (
+  `Cod` int NOT NULL AUTO_INCREMENT,
+  `Descricao` varchar(200) NOT NULL,
+  `data_os` date NOT NULL,
+  `Cliente_Cod` int NOT NULL,
+  PRIMARY KEY (`Cod`),
+  KEY `fk_os_cliente` (`Cliente_Cod`),
+  CONSTRAINT `fk_os_cliente` FOREIGN KEY (`Cliente_Cod`) REFERENCES `Clientes` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Ordem_Servico`
+--
+
+LOCK TABLES `Ordem_Servico` WRITE;
+/*!40000 ALTER TABLE `Ordem_Servico` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Ordem_Servico` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2026-10-18 18:59:30
