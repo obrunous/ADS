@@ -1,0 +1,142 @@
+2026-10-20 20:23:38,323 [AWT-EventQueue-0] JP.co.esm.caddies.jomt.jutil.m <INFO> - stack=5m
+ROOT Modelo de análise — proposto v0.2 class yN
+CLASS Equipamento attrs=8 ops=1
+ATTR identificacaoInterna TYPE Texto
+ATTR descricao TYPE Texto
+ATTR situacaoCadastral TYPE Texto
+ATTR estadoOperacional TYPE Texto
+ATTR  TYPE Utilização de equipamento
+ATTR  TYPE Tipo de equipamento
+ATTR  TYPE Modelo de equipamento
+ATTR  TYPE Movimentação
+CLASS Texto attrs=0 ops=0
+CLASS Colaborador attrs=6 ops=0
+ATTR identificacaoCorporativa TYPE Texto
+ATTR nome TYPE Texto
+ATTR situacao TYPE Texto
+ATTR  TYPE Utilização de equipamento
+ATTR  TYPE Vínculo de linha
+ATTR  TYPE Usuário do sistema
+CLASS Empresa attrs=5 ops=0
+ATTR identificacao TYPE Texto
+ATTR nome TYPE Texto
+ATTR  TYPE Utilização de equipamento
+ATTR  TYPE Filial
+ATTR  TYPE Local
+CLASS Utilização de equipamento attrs=9 ops=1
+ATTR identificacao TYPE Texto
+ATTR inicio TYPE DataTemporal
+ATTR encerramento TYPE DataTemporal
+ATTR observacao TYPE Texto
+ATTR  TYPE Equipamento
+ATTR  TYPE Colaborador
+ATTR  TYPE Empresa
+ATTR  TYPE Vínculo de linha
+ATTR  TYPE Usuário do sistema
+CLASS DataTemporal attrs=0 ops=0
+CLASS Linha telefônica attrs=5 ops=0
+ATTR identificacao TYPE Texto
+ATTR numero TYPE Texto
+ATTR situacao TYPE Texto
+ATTR  TYPE Vínculo de linha
+ATTR  TYPE Operadora
+CLASS Operadora attrs=3 ops=0
+ATTR identificacao TYPE Texto
+ATTR nome TYPE Texto
+ATTR  TYPE Linha telefônica
+CLASS Vínculo de linha attrs=7 ops=1
+ATTR identificacao TYPE Texto
+ATTR inicio TYPE DataTemporal
+ATTR encerramento TYPE DataTemporal
+ATTR  TYPE Linha telefônica
+ATTR  TYPE Colaborador
+ATTR  TYPE Utilização de equipamento
+ATTR  TYPE Usuário do sistema
+CLASS Usuário do sistema attrs=8 ops=0
+ATTR identificacao TYPE Texto
+ATTR identificadorAcesso TYPE Texto
+ATTR habilitado TYPE boolean
+ATTR  TYPE Utilização de equipamento
+ATTR  TYPE Vínculo de linha
+ATTR  TYPE Movimentação
+ATTR  TYPE Registro de auditoria
+ATTR  TYPE Colaborador
+CLASS Tipo de equipamento attrs=3 ops=0
+ATTR identificacao TYPE Texto
+ATTR nome TYPE Texto
+ATTR  TYPE Equipamento
+CLASS Modelo de equipamento attrs=4 ops=0
+ATTR identificacao TYPE Texto
+ATTR nome TYPE Texto
+ATTR  TYPE Equipamento
+ATTR  TYPE Fabricante
+CLASS Fabricante attrs=3 ops=0
+ATTR identificacao TYPE Texto
+ATTR nome TYPE Texto
+ATTR  TYPE Modelo de equipamento
+CLASS Filial attrs=4 ops=0
+ATTR identificacao TYPE Texto
+ATTR nome TYPE Texto
+ATTR  TYPE Empresa
+ATTR  TYPE Local
+CLASS Local attrs=6 ops=0
+ATTR identificacao TYPE Texto
+ATTR descricao TYPE Texto
+ATTR  TYPE Empresa
+ATTR  TYPE Filial
+ATTR  TYPE Movimentação
+ATTR  TYPE Movimentação
+CLASS Movimentação attrs=10 ops=0
+ATTR identificacao TYPE Texto
+ATTR tipo TYPE Texto
+ATTR dataEvento TYPE DataTemporal
+ATTR instanteRegistro TYPE DataTemporal
+ATTR motivo TYPE Texto
+ATTR referenciaSolicitacao TYPE Texto
+ATTR  TYPE Equipamento
+ATTR  TYPE Usuário do sistema
+ATTR  TYPE Local
+ATTR  TYPE Local
+CLASS Registro de auditoria attrs=6 ops=0
+ATTR identificacao TYPE Texto
+ATTR instante TYPE DataTemporal
+ATTR acao TYPE Texto
+ATTR referenciaAlvo TYPE Texto
+ATTR alteracoesPertinentes TYPE Texto
+ATTR  TYPE Usuário do sistema
+ASSOC participa | Equipamento [1..1] | Utilização de equipamento [0..*]
+ASSOC recebe responsabilidade | Colaborador [1..1] | Utilização de equipamento [0..*]
+ASSOC contextualiza | Empresa [1..1] | Utilização de equipamento [0..*]
+ASSOC registra abertura | Usuário do sistema [1..1] | Utilização de equipamento [0..*]
+EXPORT 01 — Utilização e responsabilidade
+PRESENTATIONS 12
+ASSOC possui historico | Linha telefônica [1..1] | Vínculo de linha [0..*]
+ASSOC utiliza linha | Colaborador [1..1] | Vínculo de linha [0..*]
+ASSOC contextualiza uso no aparelho | Utilização de equipamento [0..1] | Vínculo de linha [0..*]
+ASSOC identifica operadora atual | Operadora [1..1] | Linha telefônica [0..*]
+ASSOC registra abertura | Usuário do sistema [1..1] | Vínculo de linha [0..*]
+EXPORT 02 — Telefonia e vínculos temporais
+PRESENTATIONS 14
+ASSOC classifica | Tipo de equipamento [1..1] | Equipamento [0..*]
+ASSOC descreve modelo | Modelo de equipamento [0..1] | Equipamento [0..*]
+ASSOC fabrica | Fabricante [1..1] | Modelo de equipamento [0..*]
+EXPORT 03 — Identificação e classificação
+PRESENTATIONS 10
+ASSOC organiza | Empresa [1..1] | Filial [0..*]
+ASSOC delimita local | Empresa [1..1] | Local [0..*]
+ASSOC contextualiza | Filial [0..1] | Local [0..*]
+EXPORT 04 — Estrutura organizacional
+PRESENTATIONS 9
+ASSOC possui eventos | Equipamento [1..1] | Movimentação [0..*]
+ASSOC registra | Usuário do sistema [1..1] | Movimentação [0..*]
+ASSOC origem | Local [0..1] | Movimentação [0..*]
+ASSOC destino | Local [0..1] | Movimentação [0..*]
+ASSOC autor identificado | Usuário do sistema [0..1] | Registro de auditoria [0..*]
+ASSOC pessoa associada | Colaborador [0..1] | Usuário do sistema [0..*]
+EXPORT 05 — Movimentações, histórico e autoria
+PRESENTATIONS 15
+TOTAL_ASSOCIACOES 21
+2026-10-20 20:23:39,294 [main] JP.co.esm.caddies.uml.mindmap.MMUserIconManager <INFO> - file: /Users/brunoalves/.astah/uml/JudeMMUserIconP.xml
+
+SHA256 do projeto: 304bd6d9a9f92df62b0a4ba3892f158894fbebd10f7f1bd05a6ae134a82e37d3
+Markdown: 5 hashes idênticos. O documento 07 recebeu formatação externa durante o trabalho; relido, sem mudança do conteúdo do modelo. Esta execução não escreveu nos originais.

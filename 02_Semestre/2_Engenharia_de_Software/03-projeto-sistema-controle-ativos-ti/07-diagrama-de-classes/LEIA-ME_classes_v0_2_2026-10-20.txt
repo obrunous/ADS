@@ -1,0 +1,88 @@
+ENTREGA — DIAGRAMA DE CLASSES UML
+Sistema de Controle de Ativos de TI
+Versão 0.2 — 20/10/2026 — Modelo proposto para validação
+
+ARQUIVO PRINCIPAL
+Sistema_Controle_Ativos_TI_Classes_v0_2_2026-10-20.asta
+Projeto nativo editável, criado pela API oficial já instalada do Astah UML 10.1.0.
+Não é imagem ou outro formato renomeado. Não requer importação ou plugin adicional.
+Astah Professional 10.1.0 também instalado; sua tentativa de criação não concluiu.
+Não foi diagnosticada a causa; não se conclui que seja incompatibilidade ou licença.
+
+COMO ABRIR
+1. Abra /Applications/astah UML/astah UML.app.
+2. Use File > Open (Arquivo > Abrir) e selecione o .asta desta pasta.
+3. Na árvore Structure, expanda “Modelo de análise — proposto v0.2”.
+4. Dê duplo clique em um dos cinco diagramas numerados:
+   01 — Utilização e responsabilidade
+   02 — Telefonia e vínculos temporais
+   03 — Identificação e classificação
+   04 — Estrutura organizacional
+   05 — Movimentações, histórico e autoria
+As classes repetidas são apresentações dos mesmos elementos editáveis.
+
+CONTEÚDO E CRITÉRIOS
+15 classes de domínio, 21 associações simples nomeadas e 5 diagramas.
+Notas UML identificam versão, data, situação, hipóteses, limites e referências RF/UC/Q.
+Texto e DataTemporal são dois tipos auxiliares com estereótipo datatype, não classes de negócio adicionais.
+Tipos, visibilidades, retornos e assinaturas são candidatos; não definem linguagem, banco ou obrigatoriedade final.
+Os atributos e as três operações candidatas partem do documento 07. Os tipos de análise são provisórios.
+Não foram adicionados serviços CRUD, heranças, composições, tabelas ou regras internas de ERP.
+Não foi presumido saldo armazenado: movimentações e utilizações preservam identidade e períodos.
+As setas triangulares junto aos nomes de associações indicam sentido de leitura do nome no Astah;
+não são generalizações nem losangos de composição nas extremidades.
+
+FONTES LIDAS
+01-escopo-e-proposta/01-escopo-e-proposta.md (0.3)
+03-analise-e-especificacao-de-requisitos/03-analise-e-especificacao-de-requisitos.md (0.1)
+04-modelagem-uml/04-modelagem-uml.md (0.1)
+05-diagrama-e-especificacao-de-casos-de-uso/05-diagrama-e-especificacao-de-casos-de-uso.md (0.1)
+06-matriz-de-rastreabilidade/06-matriz-de-rastreabilidade.md (0.1)
+07-diagrama-de-classes/07-diagrama-de-classes.md (0.1, ponto de partida)
+A prioridade condicional antiga de telefonia não exclui esse controle do escopo 0.3.
+Nenhuma fonte foi alterada. Hashes conferidos: cinco fontes idênticas. O documento 07 recebeu formatação de tabelas durante o trabalho (20:22:18), fora das operações desta execução; foi relido e o conteúdo do modelo permanece consistente. Nenhuma escrita foi realizada por esta execução nos Markdown originais.
+
+HIPÓTESES A VALIDAR
+HC01: uma utilização individual referencia exatamente um equipamento; vários períodos históricos são possíveis.
+      A multiplicidade 0..* não permite automaticamente utilizações simultâneas: Q07/RN-P03.
+HC02: cada utilização deste recorte possui um colaborador e uma empresa da época.
+      Destino somente loja/unidade continua sem associação fechada: Q02/Q07.
+HC03: Vínculo de linha preserva períodos próprios da linha. Trocas não sobrescrevem os anteriores: Q10.
+HC04: cada vínculo de linha possui uma linha e um colaborador; pode contextualizar 0..1 utilização de aparelho.
+      Uso sem aparelho, várias linhas simultâneas, destinatário só unidade e compatibilidade de períodos/pessoas: Q10.
+HC05: movimentação por equipamento individual, com um usuário autor. Lotes e legado sem autor exigem refinamento: Q05/Q14.
+HC06: filial pertence a uma empresa; local pertence a uma empresa e opcionalmente a uma filial.
+      Consistência organizacional e preservação de reorganizações continuam Q02/Q05.
+HC07: usuário pode ter 0..1 colaborador associado; quantidade de contas por pessoa e contas técnicas: Q01.
+HC08: abertura de utilização/vínculo identifica um usuário autor. Encerramentos e alterações precisam de autoria própria.
+      Auditoria é conceito distinto de movimentação; alcance e ligação ao alvo dependem de Q11.
+Adicionais já presentes na base: tipo obrigatório, modelo opcional e um fabricante por modelo: Q03.
+Fabricante sem modelo, relação tipo–modelo, propriedade do equipamento e organização da linha/colaborador permanecem abertos.
+Operadora na linha é referência atual; história de portabilidade não está modelada: Q10.
+Origem/destino opcionais no evento geral; obrigatoriedade depende do tipo: Q05/Q07–Q09.
+Auditoria pode não ter usuário identificado em tentativas pré-autenticação/ações técnicas a definir;
+isso não dispensa autor de uma movimentação confirmada por operador autenticado: Q01/Q11.
+Saída, expedição, entrega e início de utilização não foram unidos automaticamente: Q07/H04.
+Correção/estorno e elo evento–utilização, lotes, termos e permissões não receberam associações inventadas.
+Sua modelagem deve aguardar Q01/Q05/Q07/Q11/Q12/Q14. O modelo não cobre integralmente todos os RFs.
+
+VALIDAÇÃO EFETUADA
+- Arquivo nativo existente e não vazio; gravação e reabertura pela API Astah UML concluídas.
+- Releitura de cópia byte a byte do arquivo final confirmou 21 associações e multiplicidades nas cinco visões.
+- O original estava aberto/bloqueado pelo aplicativo; nenhuma trava foi removida ou contornada para edição.
+- Renderização das cinco visões pelo exportador instalado do próprio Astah, com inspeção das imagens.
+- Sobreposição de origem e destino corrigida antes da entrega final.
+- Abertura no Astah confirmada pelo título da janela contendo o caminho exato do .asta.
+- Inspeção visual dentro da janela NÃO concluída: capturas exibiram apenas o desktop e leitura da árvore falhou.
+  Portanto, não houve teste de edição manual no aplicativo. O arquivo é editável estruturalmente pela API.
+- As prévias PNG são apenas apoio; o artefato editável é o .asta.
+
+AÇÃO DO USUÁRIO
+Revisar os diagramas na janela do Astah e validar as hipóteses com o responsável pelo domínio.
+Nenhuma instalação ou conversão é necessária. Não há aprovação de domínio implícita nesta entrega.
+
+DOCUMENTAÇÃO OFICIAL CONSULTADA
+https://astah.net/support/astah-api/
+https://astah.net/support/astah-pro/user-guide/class-diagrams/
+https://astah.net/support/astah-pro/user-guide/start/
+A compatibilidade efetiva foi confirmada também pelos exemplos API locais e pela reabertura no Astah 10.1.0.
